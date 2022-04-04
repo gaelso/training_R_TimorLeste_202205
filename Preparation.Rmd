@@ -1,0 +1,29 @@
+---
+title: "Training R Timor-Leste"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+## Documents
+
+Training documents can be downloaded at: https://drive.google.com/drive/folders/1sVHPTK1I-xuSWnui6evkrohR1pULZxAs?usp=sharing
+
+
+## To do list
+
+
+
+
+## Agenda
+
+
+
+
+
+

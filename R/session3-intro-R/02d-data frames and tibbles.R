@@ -45,6 +45,8 @@ df$dbh[2:4]  # List style
 
 
 ## --- Tibbles --------------------------------------------------------------
+## Tibbles require the tidyverse package.
+## To install run: install.packages("tidyverse")
 
 library(tidyverse)
 

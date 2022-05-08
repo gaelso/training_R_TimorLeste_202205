@@ -6,7 +6,7 @@
 
 
 ## --- Most useful function: HELP! ------------------------------------------
-help("sample")
+help("exp")
 ?rep
 
 

@@ -1,17 +1,12 @@
 
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
 
-
-###
-### Objects #################################################################
-###
-
-
-## The main types of objects we will see together are:
+## The main types of data we will see together are:
 ## single values (numbers, characters, booleans), vectors, lists, data frames and tibbles
+
 
 
 ## --- Data types -----------------------------------------------------------
@@ -27,10 +22,11 @@ a <- "Hello"
 a
 
 ## Boolean
+y <- 10
 y == 3
 b <- y == 3
 b
-
+class(b)
 
 ## +++ EX 3 +++
 ## 1. Create an object txt1 of type text
@@ -43,6 +39,4 @@ b
 
 
 
-
-
-############################## END ##########################################
+## END ##

@@ -1,12 +1,8 @@
 
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
-
-###
-### Objects #################################################################
-###
 
 
 ## --- Vectors --------------------------------------------------------------
@@ -74,10 +70,4 @@ list_nfi$dbh
 
 
 
-
-
-
-
-
-
-############################## END ##########################################
+## END ##

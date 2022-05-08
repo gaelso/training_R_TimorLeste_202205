@@ -1,16 +1,14 @@
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
 
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
-### 
-### Functions ###############################################################
-###
 
 
 ## --- Most useful function: HELP! ------------------------------------------
 help("sample")
 ?rep
+
 
 ## --- Core functions ------------------------------------------------------- 
 
@@ -18,7 +16,7 @@ help("sample")
 library(tidyverse)
 
 ## Load files
-source("R/session2/01d-data frames and tibbles.R")
+source("R/session3-intro-R/01d-data frames and tibbles.R")
 
 ## Others
 ls()
@@ -57,6 +55,8 @@ table(tib1$plot_id)
 
 
 ## --- Load and save tables -------------------------------------------------
+
+tree <- read_cv("data/tree.csv")
 
 write_csv(x = tib1, file = "results/tib1.csv")
 

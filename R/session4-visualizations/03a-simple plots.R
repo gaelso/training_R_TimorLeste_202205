@@ -1,11 +1,9 @@
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
+
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
 
-### 
-### Data visualization ######################################################
-###
 
 ## --- Setup ----------------------------------------------------------------
 
@@ -13,9 +11,6 @@
 library(tidyverse)
 
 ## Then load the data
-
-## !!! For this session because the data from NFI is already good, 
-##     we will introduce randomly some error !!!
 
 tree_init <- read_csv("data/tree_all.csv") %>%
   filter(class == "live tree")

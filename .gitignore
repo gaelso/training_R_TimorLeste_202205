@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 
 ## Custom gitignore
 data/
 
+=======
+# Custom gitignore
+data/
+data-original/
+results/
+>>>>>>> 647dee7032dec217099ee4bc640446c8487c6fe4
 
 # History files
 .Rhistory

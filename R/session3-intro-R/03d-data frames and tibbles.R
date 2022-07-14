@@ -1,11 +1,9 @@
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
+
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
 
-###
-### Objects #################################################################
-###
 
 ## --- Data frames ----------------------------------------------------------
 
@@ -29,7 +27,7 @@ df[1,1]      # Matrix style
 df[1, "dbh"] # Matrix style with column name instead of column number
 df$dbh       # List style
 df$dbh[1]    # List style
-
+df$dbh[2:4]  # List style
 
 ## +++ EX 6 +++
 ## 1. Select the column h in the data frame df
@@ -47,6 +45,8 @@ df$dbh[1]    # List style
 
 
 ## --- Tibbles --------------------------------------------------------------
+## Tibbles require the tidyverse package.
+## To install run: install.packages("tidyverse")
 
 library(tidyverse)
 
@@ -82,5 +82,4 @@ plot(x = tib1$dbh, y = tib1$h)
 
 
 
-############################## END ##########################################
-
+## END ##

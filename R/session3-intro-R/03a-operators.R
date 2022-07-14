@@ -1,20 +1,21 @@
 
-## Training on Lao PDR National Forest Inventory data analysis with R
-## 29/03 - 02/04/2021 Vientiane, Lao PDR
-## Gael Sola (FAO), Chittana Phompila (NUOL)
+## Training on National Forest Inventory: Overview and data analysis for carbon 
+## 09-13/05/2022, Dili, Timor Leste
+## Gael Sola (FAO)
 
 
+## === Note: 
 ## Comments: All the text following the symbol # is comment, R is not going to interpret it
 ## You can use it to explain and decorate your code
-## ------ 6 or more signs like #, - or = will make sections in the code in R studio, 
-## ------ see Code > Insert Section... or Ctrl + Shift + R
-##  +++ Exercises are marked with 3 + signs +++
-##  === Notes will be surrounded with 3 = signs ===
+## ---- 4 or more signs like #, - or = will make sections in the code in R studio, 
+## ---- see Code > Insert Section... or Ctrl + Shift + R
+## +++ Exercises are marked with 3 + signs +++
+## === Notes will be surrounded with 3 = signs ===
+## ===
 
 
-###
-### Operators ###############################################################
-###
+
+## --- Operators ------------------------------------------------------------
 
 ## Maths operators
 1 + 1
@@ -47,7 +48,9 @@ a <- 1
 
 b = 3
 
-## === Good practice, always use <- to assign, it makes the code easier to read ===
+## === NOTE:
+## Good practice, always use <- to assign, it makes the code easier to read ===
+## ===
 
 ## +++ EX 2 +++
 ## 1. Create an object aa with the value 14 + 10
@@ -58,4 +61,4 @@ b = 3
 
 
 
-############################## END ##########################################
+## END ##

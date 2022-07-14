@@ -33,26 +33,6 @@ vec2
 ## 5. Replace the 5th value by the text "work?". Does it work?
 ## +++
 
-my_vec <- c(2, 36, 72)
-
-my_vec[3] <- 12
-
-my_vec
-
-my_vec2 <- 3 * 2:9
-
-my_vec2
-
-my_vec2[5] <- "work"
-
-my_vec2
-
-
-## Example
-my_vec[1] + my_vec[2]
-
-my_vec2[1] + my_vec2[2]
-
 
 
 ## --- Lists ----------------------------------------------------------------
@@ -60,17 +40,13 @@ my_vec2[1] + my_vec2[2]
 ## Example of list
 list1 <- list(a = 1:10, 
               b = c("a","b","c"), 
-              c = matrix(1:100, nrow=10, byrow=TRUE)
+              c = matrix(1:100, nrow=10, byrow=T)
 )
 
 ## Elements of the list can be selected by 2 methods square brackets [] or Dollar sign $
 list1
 list1[1]
 list1[[1]]
-
-test1 <- list1[2]
-test2 <- list1[[2]]
-
 list1$a
 
 ### Other example
@@ -82,21 +58,16 @@ list_nfi <- list(
 
 list_nfi
 
+list_nfi[1]
+list_nfi[[1]]
 list_nfi$dbh
 
-list_nfi$height[2]
-list_nfi$height[c(2, 4)]
-list_nfi$height[2:4]
 
 ## +++ EX 5 +++
 ## 1. Create  list containing 5 objects, including at least one vector and one text, 
 ## 2. Extract the first value of the first vector.
 ## +++
 
-my_list <- list(
-  vec1 = 1:10,
-  vec2 = c("a", "b", "c"),
-  vec3 = 3 * 2:9
-  )
+
 
 ## END ##

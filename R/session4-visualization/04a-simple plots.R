@@ -8,22 +8,13 @@
 ## --- Setup ----------------------------------------------------------------
 
 ## All scripts must start with loading the necessary libraries
-#library(tidyverse)
-library(tibble)
-library(readr)
-library(dplyr)
-library(ggplot2)
+library(tidyverse)
 
 ## Then load the data
 
 tree_init <- read_csv("data/tree.csv")
   
 plot_init <- read_csv("data/plot.csv")
-
-# tree_test <- read.csv("data/tree.csv")
-# 
-# tree_init
-# tree_test
 
 tree <- tree_init %>%
   left_join(plot_init)
@@ -51,9 +42,6 @@ ggplot(tree, aes(x = tree_dbh, y = tree_height_top)) +
   geom_point(color = 'red')
 
 ## To change the aesthetics based on a category variables, place it inside the aes()
-tree$lc
-table(tree$lc)
-
 ggplot(tree, aes(x = tree_dbh, y = tree_height_top, color = lc)) +
   geom_point()
 
@@ -64,7 +52,7 @@ ggplot(tree, aes(x = tree_dbh, y = tree_height_top, size = lc)) +
   geom_point()
 
 ggplot(tree, aes(x = tree_dbh, y = tree_height_top, shape = lc, color = lc)) +
-  geom_point(size = 2)
+  geom_point()
 
 ggplot(tree, aes(x = tree_dbh, y = tree_height_top)) +
   geom_point() +
@@ -79,60 +67,11 @@ ggplot(tree, aes(x = tree_dbh, y = tree_height_top, color = lc)) +
   geom_point() +
   labs(x = "Diameter at breast height (cm)",
        y = "Tree height (m)",
-       color = "Land use"
-       )
+       color = "Land use")
 
-ggplot(tree, aes(x = tree_dbh, y = tree_height_top, color = lc)) +
-  geom_point() +
-  labs(x = "Diametro (cm)",
-       y = "Altura (m)",
-       color = "Tipu uza rai"
-       )
-
-tree %>%
-  ggplot(aes(x = tree_dbh, y = tree_height_top, color = lc)) +
-  geom_point() +
-  labs(x = "Diametro (cm)",
-       y = "Altura (m)",
-       color = "Tipu uza rai"
-       )
-
-tree %>%
-  filter(lc == "Dense forest") %>%
-  ggplot(aes(x = tree_dbh, y = tree_height_top, color = lc)) +
-  geom_point() +
-  labs(x = "Diametro (cm)",
-       y = "Altura (m)",
-       color = "Tipu uza rai"
-  )
-
-tree %>%
-  filter(lc %in% c("Dense forest", "Sparse forest")) %>%
-  ggplot(aes(x = tree_dbh, y = tree_height_top, color = lc)) +
-  geom_point() +
-  labs(x = "Diametro (cm)",
-       y = "Altura (m)",
-       color = "Tipu uza rai"
-  )
-
-tree %>%
-  filter(lc %in% c("Dense forest", "Sparse forest")) %>%
-  ggplot(aes(x = tree_dbh, y = tree_height_top, color = lc)) +
-  geom_point() +
-  labs(x = "Diametro (cm)",
-       y = "Altura (m)",
-       color = "Tipu uza rai"
-  ) +
-  facet_wrap(~lc) +
-  theme(legend.position = "none")
 
 
 ## +++ EX 1 +++
-## Create 2 graphs of your choice with different colors and shapes. 
+## Create 2 graphes of your choice with different colors and shapes. 
 ## Create custom labels for your graphs.
-## +++
-
-
-
-
 

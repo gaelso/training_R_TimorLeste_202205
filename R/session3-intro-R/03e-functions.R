@@ -16,7 +16,7 @@ help("exp")
 library(tidyverse)
 
 ## Load files
-source("R/session3-intro-R/03d-data frames and tibbles.R")
+source("R/session3-intro-R/01d-data frames and tibbles.R")
 
 ## Others
 ls()

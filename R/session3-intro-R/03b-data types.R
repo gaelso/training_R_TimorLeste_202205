@@ -16,10 +16,19 @@ a <- 10
 a
 
 ## Characters
-a <- Hello
+a <- Eucalyptus
 a
-a <- "Hello"
+a <- "Eucalyptus"
 a
+
+## Example
+
+tree_species <- "Eucalyptus obliquo"
+tree_species
+
+tree_local_name <- "Ha'as"
+tree_local_name
+
 
 ## Boolean
 y <- 10
@@ -37,6 +46,31 @@ class(b)
 ## 6. Create an object bool1 of type boolean
 ## +++
 
+txt1 <- "karau"
+txt2 <- "Bibi"
+
+num1 <- 5
+num2 <- 10
+
+num1 + num2
+
+bool1 <- num1 >= num2
+bool1
+
+## Tips
+aa <- 10
+
+AA
+
+forest_type <- "Dense forest"
+Forest_type
+forest_type
+
+A<-8
+B<-A==10
+
+a <- 8
+b <- a == 10
 
 
 ## END ##

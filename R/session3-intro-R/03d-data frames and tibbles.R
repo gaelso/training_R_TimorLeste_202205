@@ -22,19 +22,26 @@ df
 
 
 ## Select elements of a data frame
-df[,1]       # Matrix style
 df[1,1]      # Matrix style
+df[,1]       # Matrix style
 df[1, "dbh"] # Matrix style with column name instead of column number
 df$dbh       # List style
 df$dbh[1]    # List style
 df$dbh[2:4]  # List style
 
 ## +++ EX 6 +++
-## 1. Select the column h in the data frame df
-## 2. Select the first value of the column h in df 
-## 3. Select the first row of df
+## In the df object:
+## 1. Select the column h in the data frame df.
+## 2. Select the first value of the column h in df.
+## 3. Select the first row of df.
 ## +++
 
+df$h
+df[,3]
+
+df$h[1]
+
+df[1,]
 
 ## +++ EX 7 +++
 ## 1. Create a data frame my_df with 4 columns a, b, c, d and 5 lines 
@@ -48,7 +55,11 @@ df$dbh[2:4]  # List style
 ## Tibbles require the tidyverse package.
 ## To install run: install.packages("tidyverse")
 
-library(tidyverse)
+#library(tidyverse)
+library(tibble)
+library(readr)
+library(ggplot2)
+library(dplyr)
 
 ## Convert data frame to tibble
 tib <- as_tibble(df)
@@ -56,6 +67,14 @@ tib
 
 
 ## Create tibble from scratch
+
+rep(x = 3, 40)
+
+sample(x= 10:100, size = 40, replace = TRUE)
+
+set.seed(1)
+sample(x= 10:100, size = 40, replace = TRUE)
+
 set.seed(1)
 tib1 <- tibble(
   plot_id = c(rep(x = "plot1", 20), rep(x = "plot2", 20)),
@@ -65,6 +84,8 @@ tib1 <- tibble(
 )
 
 tib1$h[3] <- NA
+
+tib1
 
 ## Quick plot to see the data
 plot(x = tib1$dbh, y = tib1$h)

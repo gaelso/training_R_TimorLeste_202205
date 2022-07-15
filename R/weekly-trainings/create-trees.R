@@ -34,7 +34,7 @@ set.seed(10)
 
 vec_dbh <- sample(dbh_min:dbh_max, n, replace = T)
 
-vec_height_model <- exp(0.893 - 0.2 + 0.760 * log(tree_dbh) - 0.0340 * (log(tree_dbh))^2)
+vec_height_model <- exp(0.893 - 0.2 + 0.760 * log(vec_dbh) - 0.0340 * (log(vec_dbh))^2)
 
 vec_height_error <- exp(rnorm(n = n, mean = 0, sd = 0.243))
 
